@@ -1,0 +1,131 @@
+.light {
+    .header-mode {
+        background-color: #404f68;
+        color: #fff;
+    }
+    .webName {
+        color: white;
+    }
+    .aside-mode {
+        .menu-list {
+            background: rgb(50, 65, 87);
+            /*一级菜单激活*/
+            &>.el-menu-item {
+                &:hover {
+                    background: #3f5a82;
+                    color: #fff;
+                    i {
+                        color: #fff;
+                        transition: color 0.3s ease;
+                    }
+                }
+                &:focus {
+                    background: #3f5a82;
+                }
+                &.is-active {
+                    color: #fff;
+                }
+            }
+            /*二级菜单激活*/
+            &>.el-submenu {
+                &.is-active {
+                    &>.el-submenu__title {
+                        color: #fff;
+                        &>i {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            /*二级菜单打开*/
+            .el-submenu {
+                .el-submenu__title:hover {
+                    background: #3f5a82;
+                    color: #fff;
+                    i {
+                        color: #fff;
+                        transition: color 0.3s ease;
+                    }
+                }
+                /*二级菜单子菜单*/
+                .el-menu-item-group {
+                    background: #242f42;
+                    .el-menu-item {
+                        &:hover {
+                            background-color: #3f5a82 !important;
+                            color: #fff;
+                        }
+                        i {
+                            color: #fff;
+                            transition: color 0.3s ease;
+                        }
+                        &.is-active {
+                            background: #409eff !important;
+                            color: #fff !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-mode {
+        background-color: #f0f0f0;
+        .clear-tabs {
+            color: #409eff;
+            right: 5px;
+        }
+        .menu-box {
+            background-color: white;
+            .tabs-mode {
+                .el-tabs__header {
+                    .el-tabs__nav-wrap {
+                        .el-tabs__nav-scroll {
+                            .el-tabs__nav {
+                                .el-tabs__item {
+                                    height: 27px !important;
+                                    line-height: 27px !important;
+                                    margin: 0 5px !important;
+                                    border: 1px solid lightgray !important;
+                                    margin-top: 4px !important;
+                                    border-radius: 5px !important;
+                                    font-size: 12px;
+                                    padding: 0 5px 0 12px !important;
+                                    &.is-active {
+                                        background-color: #409eff;
+                                        color: white;
+                                        border-color: #409eff !important;
+                                    }
+                                    .el-icon-close {
+                                        font-size: 14px;
+                                        right: 0;
+                                    }
+                                }
+                                .el-tabs__item:first-child {
+                                    padding: 0 12px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .main-body>div {
+            background-color: white;
+            padding: 10px 0 0 10px;
+        }
+        .main-body {
+            .el-table__expanded-cell {
+                background-color: transparent;
+            }
+            .el-table::before {
+                height: 0;
+            }
+            .el-pagination {
+                padding-bottom: 10px;
+            }
+        }
+    }
+     ::-webkit-scrollbar {
+        background-color: white;
+    }
+}
