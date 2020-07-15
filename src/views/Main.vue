@@ -715,9 +715,8 @@ export default {
     margin-left: 80px;
   }
 
-  .el-form-item__content > .el-input,
   .el-select {
-    width: calc(100% - 80px) !important;
+    width: 100%;
   }
 
   .my-btn-group {
